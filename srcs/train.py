@@ -138,7 +138,7 @@ def train(dataset_csv, lr, epochs):
     network = init_network([x_train.shape[1], 2, 2, 2])
     train_loss = []
     validation_loss = []
-    for i in range():
+    for i in range(epochs):
         loss = 0
         n = 0
         for j in range(x_train.shape[0]):
@@ -162,4 +162,4 @@ if __name__ == "__main__":
     if (len(sys.argv) != 2):
         print("error: You need to provide one, and only one dataset parameter")
     else:
-        train(sys.argv[1], 0.01, 30)
+        train(sys.argv[1], 0.01, 3000)
